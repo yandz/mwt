@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MWT Qidget</title>
+</head>
+<body>
+
+<h1>Masjid Wak Tanjong (Staging)</h1>
+<p>QuranBit Bot</p>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var s,t; s = document.createElement('script'); s.type = 'text/javascript';
+        s.src = 'https://s3-ap-southeast-1.amazonaws.com/qiscus-sdk/public/qismo/qismo-v4.js'; s.async = true;
+        s.onload = s.onreadystatechange = function() { new Qismo('karm-gzu41e4e4dv9fu3f', {
+                        options: {
+                            channel_id: 123310, appVersion :'latest',
+                            qismoIframeUrl: 'https://latest-multichannel.qiscus.com',  
+                            extra_fields: [], 
+                        }
+                    }); }
+        t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+    });
+</script>
+
+
+</body>
+</html>
